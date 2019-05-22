@@ -31,7 +31,6 @@ header{
     font-size: 150%;
     margin-top: 10px;
     color: black;
-    float: left;
     text-transform: capitalize;
 }
 nav{
@@ -102,6 +101,7 @@ background-color: white;
 #last{
     display: flex;
     justify-content: space-between;
+    margin: auto 2%;
 }
 .lastimg{
     width: 30%;
@@ -115,7 +115,11 @@ background-color: white;
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    margin-left: 2%;
 }
 .para{
     margin-top: -4%;
+}
+.parah{
+    margin-bottom: 2%;
 }
