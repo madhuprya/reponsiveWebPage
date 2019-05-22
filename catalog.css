@@ -4,6 +4,8 @@ body{    max-width: 100%;
     flex-direction:column;
     font-family: Arial;
     font-size: 16px;
+    margin: auto;
+    
 }
 /*header section**/
 header{
@@ -15,13 +17,13 @@ header{
     height: 3rem;
     margin-top: -10px !important;
     padding: 2%;
-    margin-left: -2%;
     z-index: 1;
 
 }
 .logo{
     height: 100%;
     width: 15%;
+    margin-left: -9px;
     
 }
 
@@ -30,7 +32,6 @@ header{
     margin-top: 10px;
     color: black;
     float: left;
-
     text-transform: capitalize;
 }
 nav{
@@ -39,7 +40,7 @@ nav{
     justify-content: space-around;
     height:100%;
     width:15%;
-    margin-right: 4%;
+    /* margin-right: 5%; */
 }
 .bar {
     width: 100%;
@@ -70,7 +71,7 @@ article{
     width: 100%;
     font-family: Arial;
     font-size: 16px;
-    margin: auto;
+    /* margin: auto; */
 }
 /*table section*/
 table{
@@ -106,7 +107,7 @@ background-color: white;
     justify-content: space-between;
 }
 .lastimg{
-    margin: 2%;
+    /* margin: 2%; */
     width: 30%;
     height: 30%;
     
