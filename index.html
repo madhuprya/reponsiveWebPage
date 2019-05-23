@@ -10,9 +10,11 @@
 
 <body class="container">
     <header>
-        <img class="logo" src="images/city.png">
-        <p class="title">the brighton times</p>
-        <nav>
+        <div id="logo">
+            <img class="icon" src="images/city.png">
+            <p class="title">the brighton times</p>
+        </div>
+        <nav id="menu_bar">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -26,7 +28,13 @@
                 English to emphasise design elements over content.</p>
         </figcaption>
     </figure>
-    <article id="topNews">
+    <article id="top_news">
+
+        <div id="top_news_heading">
+            <p>Top news</p>
+            <p>&#43;more</p>
+        </div>
+        <hr>
         <p>&#187; Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.</p>
         <hr>
         <p>&#187; Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.</p>
@@ -38,140 +46,136 @@
         <p>&#187; Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.</p>
         <hr>
     </article>
-    <table>
-        <tr>
-            <th>date</th>
-            <th>team</th>
-            <th colspan="2" style="text-align:center;">score</th>
-            <th>team</th>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Bears</td>
-            <td>98</td>
-            <td>109</td>
-            <td>Cubs</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Bears</td>
-            <td>98</td>
-            <td>109</td>
-            <td>Cubs</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Bears</td>
-            <td>98</td>
-            <td>109</td>
-            <td>Cubs</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Bears</td>
-            <td>98</td>
-            <td>109</td>
-            <td>Cubs</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Bears</td>
-            <td>98</td>
-            <td>109</td>
-            <td>Cubs</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Bears</td>
-            <td>98</td>
-            <td>109</td>
-            <td>Cubs</td>
-        </tr>
-        <tr>
-            <td>Friday</td>
-            <td>Bears</td>
-            <td>98</td>
-            <td>109</td>
-            <td>Cubs</td>
-        </tr>
-    </table>
-    <main style="margin-top: 10% ; width: 100%;">
-        <table id="wet">
+    <section id="sport_news">
+        <table id="sport_table">
             <tr>
-                <th colspan="5" style="background-color: white">Brighton, UK</th>
+                <th>date</th>
+                <th>team</th>
+                <th colspan="2" id="score">score</th>
+                <th>team</th>
             </tr>
             <tr>
-                <td colspan="5">Sunny</td>
+                <td>Friday</td>
+                <td>Bears</td>
+                <td>98</td>
+                <td><b> 109</b></td>
+                <td>Cubs</td>
             </tr>
             <tr>
-                <td colspan="3"><img src="images/weather.png" alt=""></td>
-                <td colspan="2">
-                    <h1>18&#9900;c</h1>
-                </td>
-
-            </tr>
-            <tr id="wethr">
-                <td>Mon</td>
-                <td>Tues</td>
-                <td>Wed</td>
-                <td>Thurs</td>
-                <td>Fri</td>
-            </tr>
-            <tr id="img">
-                <td><img src="images/sunny.png"></td>
-                <td><img src="images/cloudy.png"></td>
-                <td><img src="images/cloudy.png"></td>
-                <td><img src="images/rain.png"></td>
-                <td><img src="images/sunny.png"></td>
+                <td>Friday</td>
+                <td><b>Otters</b></td>
+                <td><b>3</b></td>
+                <td>1</td>
+                <td>Cubs</td>
             </tr>
             <tr>
-                <td>18&#9900;c</td>
-                <td>18&#9900;c</td>
-                <td>18&#9900;c</td>
-                <td>18&#9900;c</td>
-                <td>18&#9900;c</td>
+                <td>Friday</td>
+                <td><b>Wolves</b></td>
+                <td><b></b>7</td>
+                <td>0</td>
+                <td>Cubs</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Bears</td>
+                <td>11</td>
+                <td><b>12</b></td>
+                <td><b>Capons</b></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td><b>Stags</b></td>
+                <td><b>6</b></td>
+                <td>2</td>
+                <td>Cubs</td>
             </tr>
         </table>
-    </main>
+    </section>
+    <section id="weather_news">
+       
+            <h3>Brighton, UK</h3>
+            <p>Sunny</p>
+        
+        <div id="today_weather">
+            <img src="images/weather.png">
+            <h1>18&#9900;c</h1>
+        </div>
+        <div id="all_day_weather">
+            <div>
+                <div>Mon</div>
+                <img src="images/sunny.png">
+                <div>18&#9900;c</div>
+            </div>
+            <div>
+                <div>Tue</div>
+                <img src="images/cloudy.png">
+                <div>18&#9900;c</div>
+            </div>
+            <div>
+                <div>Wed</div>
+                <img src="images/cloudy.png">
+                <div>18&#9900;c</div>
+            </div>
+            <div>
+                <div>Thurs</div>
+                <img src="images/rain.png">
+                <div>18&#9900;c</div>
+            </div>
 
+            <div>
+                <div>Fri</div>
+                <img src="images/sunny.png">
+                <div>18&#9900;c</div>
+            </div>
+        </div>
+    </section>
 
-
-
-    <section>
-        <div id="last">
+    <section id="latest_news">
+        <div id="latest_news_heading">
             <p>Latest news</p>
             <p>&#43;more</p>
         </div>
-        <hr style="margin: -2% 1%;">
+        <hr>
+        <div id="latest_news_list">
+            <div class="latest_news_div">
+                <img class="latest_news_image" src="images/dog.jpg">
+                <p class="latest_news_box">
+                    <h3 class="latest_news_heading">Absolute Breaking News</h3>
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                </p>
+            </div>
+            <div class="latest_news_div">
+                <img class="latest_news_image" src="images/dog.jpg">
+                <p class="latest_news_box">
+                    <h3 class="latest_news_heading">Absolute Breaking News</h3>
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                </p>
+            </div>
+            <div class="latest_news_div">
+                <img class="latest_news_image" src="images/dog.jpg">
+                <p class="latest_news_box">
+                    <h3 class="latest_news_heading">Absolute Breaking News</h3>
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
+                </p>
+            </div>
+        </div>
     </section>
-    <section id="lastdiv">
-        <div>
-            <img class="lastimg" src="images/dog.jpg">
-            <p class="para">
-                <h3 class="parah">Absolute Breaking News</h3>
-                Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
-                Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
-            </p>
-        </div>
-        <div>
-            <img class="lastimg" src="images/dog.jpg">
-            <p class="para">
-                <h3 class="parah">Absolute Breaking News</h3>
-                Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
-                Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
-            </p>
-        </div>
-        <div>
-            <img class="lastimg" src="images/dog.jpg">
-            <p class="para">
-                <h3 class="parah">Absolute Breaking News</h3>
-                Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
-                Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.
-            </p>
-        </div>
-    </section>
-    <footer>
-
+    <footer id="footer">
+        <hr>
+        <div id="footer_menu">
+        <div>Contact us</div>
+        <div>Follow us on Twitter</div>
+        <div>RSS</div>
+    </div>
     </footer>
 
 
