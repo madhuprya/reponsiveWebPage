@@ -47,15 +47,15 @@ nav{
     background-color: dimgrey;
   }
 /*figure section*/
-figure{
+#breaking_news{
     position: relative;
     margin: 0;
 }
- .fig{
+ .breaking_news_figure{
     height: 30rem;
     width: 100%;
 }
-figcaption{   
+#breaking_news_caption{   
     position: absolute;
     bottom: 1%;
     background: rgba(0, 0, 0, 0.5); 
@@ -64,7 +64,7 @@ figcaption{
 }
 /*article section*/
 
-article{
+#topNews{
     width: 100%;
     font-family: Arial;
     font-size: 16px;
