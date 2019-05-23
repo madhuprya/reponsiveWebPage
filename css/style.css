@@ -4,13 +4,13 @@ body{
     display: flex;
     flex-direction:column;
     font-family: Arial;
-    font-size: 100%;
+    font-size: 90%;
     margin: auto;
     text-align: left;
     
 }
 /*header section**/
-header{
+#head{
     background-color: white;
     position: fixed;
     display: flex;
@@ -19,30 +19,39 @@ header{
     height: 4rem;
     z-index: 1;
     padding-bottom: 2%;
+    flex-wrap: nowrap;
 
+}
+#head>div,nav{
+    flex-grow: 3;
 }
 #logo{
     display: flex;
+    width: 60%;
 }
 .icon{
-    width: 25%;
+    width: 15%; flex-grow: 0;
 }
 
 .title{
-    font-size: 150%;
+    
     color: black;
     text-transform: capitalize;
+    margin-top: 6%;flex-grow: 3;
+    font-size:24px;
+   
 }
-nav{
+#menu_bar{
     display: flex;
     flex-direction:column;
     justify-content: space-around;
     height: 71%;
-    width: 15%;
     margin: auto 0;
+    align-items: flex-end;
+
 }
 .bar {
-    width: 100%;
+    width: 50%;
     height: 13%;
     border-radius: 25%;
     background-color: rgb(185, 180, 180);
@@ -59,24 +68,34 @@ nav{
 
 #breaking_news_caption{   
     position: absolute;
-    bottom: 0.5%;
+    bottom: 1%;
     background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1;
-    padding: 0 3%;
-    width: 94%;
+    padding: 0 2%;
+    width: 96%;
+}
+#breaking_news_caption > h2{
+    margin:1% auto;
+}
+#breaking_news_caption >p{
+    margin: 0 auto 1% auto;
 }
 /*top news section*/
 
 #top_news{
-    width: 95%;
-    margin: 2%;
+    width: 96%;
+    margin: 18% 2%;
 }
 
 #top_news_heading{
+  
     display: flex;
     justify-content: space-between;
 }
 /*sport news section*/
+#sport_news{
+    margin-top:-15%;
+}
 #sport_table{
     border-collapse: collapse;
     width: 100%;
@@ -113,13 +132,17 @@ tr:nth-child(odd){
 #all_day_weather{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
 
 }
 #all_day_weather > div>img{
     align-items: flex-start;
     width: 100%;
+   
+}
+#all_day_weather>div{
+    flex-grow: 2;
 }
 /*lastest news section*/
 #latest_news_list{
@@ -151,6 +174,7 @@ tr:nth-child(odd){
 }
 .latest_news_heading{
     margin-bottom: 2%;
+    color: rgb(61, 59, 59);
 }
 #footer_menu{
     display: flex;
@@ -163,3 +187,38 @@ tr:nth-child(odd){
 }
 
 /*media-query*/
+@media only screen and (min-width: 767px){
+    .container{
+        font-size:22px;
+        
+    }
+    .title{
+        margin-top: 3%;
+        font-size: 28px;
+    }
+    #top_news{
+        margin: 10% 2% 20% 2%;
+    }
+    #menu_bar{
+        width: 10px;
+    }
+    @media only screen and (min-width: 1024px){
+        .container{
+            font-size:36px;
+            
+        }
+        .title{
+            margin-top: 1%;
+            font-size: 40px;
+        }
+        #top_news{
+            margin: 10% 2% 20% 2%;
+        }
+        #menu_bar{
+            width: 10px;
+        }
+        .bar{
+         height: 17%;   
+        }
+    }
+}
