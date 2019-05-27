@@ -7,8 +7,30 @@ body{
    font-size: 15px;
    margin: auto;
    text-align: left;
+  
    
 }
+h2::first-letter{
+   text-transform: uppercase;
+}
+p::first-letter{
+   text-transform: uppercase;
+}
+td::first-letter{
+   text-transform: uppercase;
+}
+th::first-letter{
+   text-transform: uppercase;
+}
+div::first-letter{
+   text-transform: uppercase;
+}
+#top_news>p::fourth-letter{
+   text-transform: uppercase;
+}
+/* p,h1,h2,div,h3,td,th::first-letter {
+   text-transform: uppercase;
+} */
 /*header section**/
 #head{
    background-color: white;
@@ -24,6 +46,8 @@ body{
 }
 #menu{
     display: none;
+    text-transform: capitalize;
+
 }
 #head>div,nav{
    flex-grow: 3;
@@ -243,7 +267,7 @@ tr:nth-child(odd){
     .title{
       margin:2% 2%;
       font-size: 2.5em;
-  }
+   }
    #top_news{
        margin: 5% 2% 2% 2%;
    }
@@ -328,21 +352,21 @@ tr:nth-child(odd){
 
    }
 
-.breaking_news_figure{
-   display: none;
-}
-.hero_image{
-   display: block;
-   background-image: url('../images/dog.jpg');
-   background-color: #cccccc;
-   height: 500px;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+   .breaking_news_figure{
+      display: none;
+   }
+   .hero_image{
+      display: block;
+      background-image: url('../images/dog.jpg');
+      background-color: #cccccc;
+      height: 450px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
-}
-   #breaking_news_caption{
-       height:40%;
+   }
+      #breaking_news_caption{
+       height:30%;
         background: rgba(250,250, 250, 1);
         color:gray;
         bottom:0%;
@@ -350,7 +374,8 @@ tr:nth-child(odd){
 
    }
    th,tr:nth-child(odd){
-    background-color: white;}
+    background-color: white;
+   }
     th,td{
        padding: 3%;
     }
@@ -366,37 +391,37 @@ tr:nth-child(odd){
          width: 100%;
          margin-top: -10%;
       }
-#weather_news{
-   margin: 0 5%;
-   width: 84%;
-   padding: 3%;
-}
-#latest_news{
-   width: 90%;
-   margin: 5%;
-   margin-top: -3% !important;
+   #weather_news{
+      margin: 0 5%;
+      width: 84%;
+      padding: 3%;
+   }
+   #latest_news{
+      width: 90%;
+      margin: 5%;
+      margin-top: -3% !important;
 
-}
-.latest_news_box{
-   margin-top: -1%;
-}
-.latest_news_heading{
-   margin-bottom: 1%;
-}
-#today_weather>img{
-   width: 45vh;
-}
-#all_day_weather > div>img{
+   }
+   .latest_news_box{
+      margin-top: -1%;
+   }
+   .latest_news_heading{
+      margin-bottom: 1%;
+   }
+   #today_weather>img{
+      width: 45vh;
+   }
+   #all_day_weather > div>img{
+      
+      width: 20vh;
    
-   width: 20vh;
-  
-}
+   }
    .title{
        margin:1% 3%;
        font-size: 3em;
    }
    #footer{
-       height: 150px;
+       height: 20%;
        width: 100%;
        margin: 0 0 10% 0;
    }
